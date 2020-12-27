@@ -32,10 +32,10 @@ else
 fi
 else
 	echo "File $file" "not found!";
-	cp monkey_payloads ~/.monkey_payloads;
+	cp ./monkey_payloads ~/.monkey_payloads;
 	if [ -f "$file" ];then
-	echo "  Built $file.";
+	echo -e "\e[1;33m  Built $file\nRun monkey again to use it!\e[0m";
 	else
-	echo "  Unable to build $file";
+	echo "\e[1;31m  Unable to build $file\e[0m";
 	fi
 fi
