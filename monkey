@@ -4,7 +4,6 @@ if ! [ -f "$file" ];then
 cp ./monkey_payloads ~/.monkey_payloads;
 cp ./monkey /usr/bin/monkey
 fi
-
 type_arr+=( BASH PERL PYTHON PYTHON3 PHP RUBY NETCAT JAVA TTY POWERSHELL );
 if [ "$1" = "-h" ] || [ "$1" = "--help" ];then
 	echo -e "monkey v2.0 (c) 28-12-2020 by \e[1;36mTHEC4R3T4K3R\e[0m - Please do not use in military or secret service organizations, or for illegal purposes.";
@@ -38,7 +37,3 @@ else
 	echo -e "monkey: unrecognized option '$TYPE'\nTry 'monkey --help' for more information."
 	fi
 fi
-
-	
-	
-
