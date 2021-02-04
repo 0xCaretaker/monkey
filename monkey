@@ -24,6 +24,7 @@ elif [ "$1" = "-l" ] || [ "$1" = "--list" ];then
 	echo -e "...More coming soon!";
 elif [ "$1" = "--purge" ];then
 	rm ~/.monkey_payloads /usr/bin/monkey
+	echo "Removed Monkey.";
 else
 	TYPE=$1;IP=$2;PORT=$3;SHELLTYPE=$4
 	TYPE=`echo ${TYPE^^}`
