@@ -10,6 +10,7 @@ if [ "$1" = "-h" ];then
 	echo -e "Syntax: monkey | [TYPE] | [IP] | [PORT] | [SHELL-TYPE]\n";
 	echo -e "Mandatory arguments to long options are mandatory for short options too.";
 	echo -e "  -l, --list                  list all available types.";
+	echo -e "      --purge                 remove monkey.";
 	echo -ne "\n  Note: \e[1;36m'monkey' with even no arguments works!!\e[0m \n\t Default Type:Netcat, IP:\e[1;36mtun0\e[0m, Port:4444, Shell-type:bash.";
 	echo -e "\nExamples:\n  monkey \n  monkey Bash \n  monkey Netcat 10.0.0.1 \n  monkey Python 10.0.0.1 1234\n  monkey Python 10.0.0.1 1234 zsh \n  monkey TTY";
 elif [ "$1" = "-l" ] || [ "$1" = "--list" ];then
