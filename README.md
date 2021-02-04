@@ -1,5 +1,7 @@
 # monkey
 Quick and simple reverse shell payload generator to save time.
+Available types in monkey v2.0:
+  Bash, Perl, Python, Python3, PHP, Ruby, Netcat, Java,Python TTY and Powershell.
 <br/>
 <b>Installation:</b><br />
   1. ```git clone https://github.com/THEC4R3T4K3R/monkey.git```<br />
