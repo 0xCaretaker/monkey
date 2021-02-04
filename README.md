@@ -11,7 +11,7 @@ Quick and simple reverse shell payload generator to save time.
   <br />
   <br />
   <br />
-    monkey v2.0 (c) 28-12-2020 by THEC4R3T4K3R - Please do not use in military or secret service organizations, or for illegal purposes.<br />
+  
     Generates Reverse Shell Payloads + Python TTY!<br />
     Syntax: monkey | [TYPE] | [IP] | [PORT] | [SHELL-TYPE]<br />
     <br />
