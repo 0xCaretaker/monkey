@@ -1,6 +1,6 @@
 # monkey
 Quick and simple reverse shell payload generator to save time.
-
+<br/>
 <b>Installation:</b><br />
   1. ```git clone https://github.com/THEC4R3T4K3R/monkey.git```<br />
   2. ```cd monkey; chmod +x monkey```<br />
@@ -8,8 +8,6 @@ Quick and simple reverse shell payload generator to save time.
   Now Monkey is globally installed! You can simply use it from anywhere with ```monkey```.  <br />
 <b>Usage: </b>
   ```monkey```, ```monkey -h``` or ```monkey --help``` for more instructions.
-  <br />
-  <br />
   <br />
   
     Generates Reverse Shell Payloads + Python TTY!<br />
@@ -23,8 +21,10 @@ Quick and simple reverse shell payload generator to save time.
              Default Type:Netcat, IP:tun0, Port:4444, Shell-type:bash.<br />
     Examples:<br />
       monkey<br />
-      monkey Bash<br />
+      monkey bash<br />
+      monkey power 10.0.0.1 1234 <br />
       monkey Netcat 10.0.0.1<br />
-      monkey Python 10.0.0.1 1234<br />
-      monkey Python 10.0.0.1 1234 zsh<br />
+      monkey PYTHON 10.0.0.1 1234<br />
       monkey TTY<br />
+
+
