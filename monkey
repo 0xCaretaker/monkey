@@ -18,6 +18,8 @@ elif [ "$1" = "-l" ] || [ "$1" = "--list" ];then
 	do echo -n "$type ";
 	done
 	echo -e "...More coming soon!";
+elif [ "$1" = "--purge" ];then
+	rm ~/.monkey_payloads /usr/local/bin/monkey
 else
 	TYPE=$1;IP=$2;PORT=$3;SHELLTYPE=$4
 	TYPE=`echo ${TYPE^^}`
