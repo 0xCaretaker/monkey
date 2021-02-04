@@ -19,7 +19,7 @@ elif [ "$1" = "-l" ] || [ "$1" = "--list" ];then
 else
 	TYPE=$1;IP=$2;PORT=$3;SHELLTYPE=$4
 	TYPE=`echo ${TYPE^^}`
-	if [ -z $TYPE ];then TYPE=Netcat;fi
+	if [ -z $TYPE ];then TYPE=NETCAT;fi
 	if [ -z $IP ];then IP=$(ifconfig tun0 | grep "inet " | cut -d" " -f10);fi
 	if [ -z $PORT ];then PORT=4444;fi
 	if [ -z $SHELLTYPE ];then SHELLTYPE=bash;fi
