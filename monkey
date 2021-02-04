@@ -1,11 +1,11 @@
 #!/bin/bash
 file=~/.monkey_payloads
 if [ -f "$file" ];then
+echo -e "\e[1;31m  Unable to build $file\e[0m";
+else
 cp ./monkey_payloads ~/.monkey_payloads;
 cp ./monkey /usr/bin/monkey
 echo hello;
-else
-echo "\e[1;31m  Unable to build $file\e[0m";
 fi
 
 
