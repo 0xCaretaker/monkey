@@ -7,4 +7,4 @@ Quick and simple reverse shell payload generator to save time.
   3. ```./monkey```<br /><br />
   
 <b>Usage: </b>
-  ```./monkey```
+  ```monkey```
