@@ -1,6 +1,13 @@
 #!/bin/bash
 file=~/.monkey_payloads
-if [ -f "$file" ]; then
+cp ./monkey_payloads ~/.monkey_payloads;
+cp ./monkey /usr/local/bin/monkey
+if [ -f "$file" ];then
+echo -e "\e[1;33m  Built $file\nRun monkey again to use it!\e[0m";
+else
+echo "\e[1;31m  Unable to build $file\e[0m";
+fi
+
 type_arr+=( BASH PERL PYTHON PYTHON3 PHP RUBY NETCAT JAVA TTY POWERSHELL );
 if [ "$1" = "-h" ];then
 	echo -e "monkey v1.0 (c) 28-12-2020 by \e[1;36mTHEC4R3T4K3R\e[0m - Please do not use in military or secret service organizations, or for illegal purposes.";
@@ -30,12 +37,7 @@ else
 	echo -e "monkey: unrecognized option '$TYPE'\nTry 'monkey --help' for more information."
 	fi
 fi
-else
-	echo "File $file" "not found!";
-	cp ./monkey_payloads ~/.monkey_payloads;
-	if [ -f "$file" ];then
-	echo -e "\e[1;33m  Built $file\nRun monkey again to use it!\e[0m";
-	else
-	echo "\e[1;31m  Unable to build $file\e[0m";
-	fi
-fi
+
+	
+	
+
