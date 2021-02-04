@@ -6,7 +6,7 @@ cp ./monkey /usr/bin/monkey
 type_arr+=( BASH PERL PYTHON PYTHON3 PHP RUBY NETCAT JAVA TTY POWERSHELL );
 if [ "$1" = "-h" ];then
 	echo -e "monkey v1.0 (c) 28-12-2020 by \e[1;36mTHEC4R3T4K3R\e[0m - Please do not use in military or secret service organizations, or for illegal purposes.";
-	echo -e "Generates Reverse Shell Payloads. \e[1;36m+Bonus Python TTY!\e[0m";
+	echo -e "Generates Reverse Shell Payloads + Python TTY!";
 	echo -e "Syntax: monkey | [TYPE] | [IP] | [PORT] | [SHELL-TYPE]\n";
 	echo -e "Mandatory arguments to long options are mandatory for short options too.";
 	echo -e "  -l, --list                  list all available types.";
