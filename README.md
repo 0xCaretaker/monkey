@@ -10,21 +10,19 @@ Quick and simple reverse shell payload generator to save time.
   ```monkey```, ```monkey -h``` or ```monkey --help``` for more instructions.
   <br />
   
-    Generates Reverse Shell Payloads + Python TTY!<br />
-    Syntax: monkey | [TYPE] | [IP] | [PORT] | [SHELL-TYPE]<br />
-    <br />
-    Mandatory arguments to long options are mandatory for short options too.<br />
-      -l, --list                  list all available types.<br />
-          --purge                 remove monkey.<br />
-    <br />
-      Note: 'monkey' with even no arguments works!!<br />
-             Default Type:Netcat, IP:tun0, Port:4444, Shell-type:bash.<br />
-    Examples:<br />
-      monkey<br />
-      monkey bash<br />
-      monkey power 10.0.0.1 1234 <br />
-      monkey Netcat 10.0.0.1<br />
-      monkey PYTHON 10.0.0.1 1234<br />
-      monkey TTY<br />
-
-
+    Generates Reverse Shell Payloads + Python TTY!
+    Syntax: monkey | [TYPE] | [IP] | [PORT] | [SHELL-TYPE]
+    
+    Mandatory arguments to long options are mandatory for short options too.
+      -l, --list                  list all available types.
+          --purge                 remove monkey.
+    
+      Note: 'monkey' with even no arguments works!!
+             Default Type:Netcat, IP:tun0, Port:4444, Shell-type:bash.
+    Examples:
+      monkey
+      monkey bash
+      monkey power 10.0.0.1 1234 
+      monkey Netcat 10.0.0.1
+      monkey PYTHON 10.0.0.1 1234
+      monkey TTY
