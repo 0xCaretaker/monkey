@@ -3,7 +3,6 @@ file=~/.monkey_payloads
 if ! [ -f "$file" ];then
 cp ./monkey_payloads ~/.monkey_payloads;
 cp ./monkey /usr/bin/monkey
-echo hello;
 fi
 
 type_arr+=( BASH PERL PYTHON PYTHON3 PHP RUBY NETCAT JAVA TTY POWERSHELL );
