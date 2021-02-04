@@ -2,11 +2,6 @@
 file=~/.monkey_payloads
 cp ./monkey_payloads ~/.monkey_payloads;
 cp ./monkey /usr/local/bin/monkey
-if [ -f "$file" ];then
-echo -e "\e[1;33m  Built $file\nRun monkey again to use it!\e[0m";
-else
-echo "\e[1;31m  Unable to build $file\e[0m";
-fi
 
 type_arr+=( BASH PERL PYTHON PYTHON3 PHP RUBY NETCAT JAVA TTY POWERSHELL );
 if [ "$1" = "-h" ];then
