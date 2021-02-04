@@ -7,5 +7,4 @@ Quick and simple reverse shell payload generator to save time.
   3. ```./monkey```<br /><br />
   Now Monkey is globally installed! You can simply use it from anywhere with ```monkey```.  <br />
 <b>Usage: </b>
-  ```monkey```
-  ```monkey -h``` or ```monkey --help``` for more instructions.
+  ```monkey```, ```monkey -h``` or ```monkey --help``` for more instructions.
