@@ -1,7 +1,13 @@
 #!/bin/bash
 file=~/.monkey_payloads
+if [ -f "$file" ];then
 cp ./monkey_payloads ~/.monkey_payloads;
 cp ./monkey /usr/bin/monkey
+echo hello;
+else
+echo "\e[1;31m  Unable to build $file\e[0m";
+fi
+
 
 type_arr+=( BASH PERL PYTHON PYTHON3 PHP RUBY NETCAT JAVA TTY POWERSHELL );
 if [ "$1" = "-h" ];then
